@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Escape - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d1b69 50%, #1a1a3e 75%, #0f0f23 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Animated stars background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+                radial-gradient(2px 2px at 40px 70px, #ffffff, transparent),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+                radial-gradient(1px 1px at 130px 80px, #ffffff, transparent),
+                radial-gradient(2px 2px at 160px 30px, #ffffff, transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px;
+            animation: sparkle 20s linear infinite;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        @keyframes sparkle {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-100px); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            background: rgba(15, 15, 35, 0.8);
+            border: 2px solid rgba(51, 204, 255, 0.6);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #ffd700;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #33ccff;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .email {
+            color: #33ccff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-link a {
+            color: #33ccff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid #33ccff;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .back-link a:hover {
+            background: #33ccff;
+            color: #0f0f23;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(51, 204, 255, 0.4);
+        }
+
+        .effective-date {
+            text-align: center;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ORBIT ESCAPE</h1>
+            <p class="subtitle">Privacy Policy</p>
+        </div>
+
+        <div class="effective-date">
+            <p>Effective Date: January 1, 2025</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Introduction</h2>
+            <p>This Privacy Policy describes how Orbit Escape ("we," "our," or "us") collects, uses, and shares information when you use our mobile game Orbit Escape (the "App"). We are committed to protecting your privacy and being transparent about our data practices.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Information We Collect</h2>
+            
+            <h3>Information Collected Automatically</h3>
+            <p>When you use our App, we and our third-party partners may automatically collect certain information:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device identifiers, operating system version, device model</li>
+                <li><strong>Usage Information:</strong> How you interact with the App, game progress, scores, and gameplay data</li>
+                <li><strong>Location Information:</strong> Approximate location (city/region level) for advertising purposes</li>
+                <li><strong>Advertising Data:</strong> Information about advertisements you view or interact with</li>
+            </ul>
+
+            <h3>Information You Provide</h3>
+            <ul>
+                <li><strong>Game Progress:</strong> High scores, planet pack unlocks, settings preferences</li>
+                <li><strong>Purchase Information:</strong> Records of in-app purchases (handled by Apple)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            <ul>
+                <li><strong>App Functionality:</strong> To provide and maintain the App's core features</li>
+                <li><strong>Game Progress:</strong> To save your progress, settings, and achievements</li>
+                <li><strong>Advertising:</strong> To display relevant advertisements through Google AdMob</li>
+                <li><strong>Analytics:</strong> To understand how users interact with our App and improve functionality</li>
+                <li><strong>Customer Support:</strong> To respond to your inquiries and provide assistance</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Third-Party Services</h2>
+            
+            <h3>Google AdMob</h3>
+            <p>Our App uses Google AdMob to display advertisements. AdMob may collect and use information to provide personalized ads. This includes:</p>
+            <ul>
+                <li>Device identifiers and advertising IDs</li>
+                <li>Approximate location information</li>
+                <li>App usage and interaction data</li>
+                <li>Information about ads you view or click</li>
+            </ul>
+            <p>For more information about how Google processes your data, please review Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+            <h3>Apple App Store</h3>
+            <p>In-app purchases are processed by Apple through the App Store. We do not have access to your payment information. Apple's Privacy Policy governs how they handle your purchase data.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Data Sharing</h2>
+            <p>We do not sell your personal information. We may share information in the following circumstances:</p>
+            <ul>
+                <li><strong>Advertising Partners:</strong> With Google AdMob for advertising purposes as described above</li>
+                <li><strong>Legal Requirements:</strong> If required by law or to protect our rights and safety</li>
+                <li><strong>Business Transfers:</strong> In connection with any merger, sale of assets, or acquisition</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Your Choices and Rights</h2>
+            
+            <h3>Advertising Preferences</h3>
+            <ul>
+                <li><strong>iOS:</strong> You can limit ad tracking in Settings > Privacy & Security > Apple Advertising > Personalized Ads</li>
+                <li><strong>Remove Ads:</strong> Purchase our "Remove Ads" option to eliminate most advertising</li>
+            </ul>
+
+            <h3>Data Requests</h3>
+            <p>You may request to:</p>
+            <ul>
+                <li>Access the personal information we have about you</li>
+                <li>Correct or update your information</li>
+                <li>Delete your information (note: this may affect app functionality)</li>
+            </ul>
+            <p>To exercise these rights, contact us at <a href="mailto:info@orbit-escape.com" class="email">info@orbit-escape.com</a></p>
+        </div>
+
+        <div class="content-section">
+            <h2>Data Security</h2>
+            <p>We implement appropriate security measures to protect your information. However, no method of transmission over the internet or electronic storage is completely secure, so we cannot guarantee absolute security.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Children's Privacy</h2>
+            <p>Our App is not directed to children under 13 years of age, and we do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>International Users</h2>
+            <p>If you are located outside the United States, please note that your information may be transferred to and processed in the United States, where privacy laws may differ from those in your jurisdiction.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy in the App and updating the "Effective Date" above. Your continued use of the App after changes become effective constitutes acceptance of the revised Privacy Policy.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><a href="mailto:info@orbit-escape.com" class="email">info@orbit-escape.com</a></p>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Support</a>
+        </div>
+    </div>
+</body>
+</html>
