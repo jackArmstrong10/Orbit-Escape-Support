@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Escape - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d1b69 50%, #1a1a3e 75%, #0f0f23 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Animated stars background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+                radial-gradient(2px 2px at 40px 70px, #ffffff, transparent),
+                radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+                radial-gradient(1px 1px at 130px 80px, #ffffff, transparent),
+                radial-gradient(2px 2px at 160px 30px, #ffffff, transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px;
+            animation: sparkle 20s linear infinite;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        @keyframes sparkle {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-100px); }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            background: rgba(15, 15, 35, 0.8);
+            border: 2px solid rgba(51, 204, 255, 0.6);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .email {
+            color: #33ccff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid #33ccff;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .email:hover {
+            background: #33ccff;
+            color: #0f0f23;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(51, 204, 255, 0.4);
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-answer {
+            color: #ffffff;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            .logo {
+                width: 150px;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="orbit-escape-logo.png" alt="Orbit Escape Logo" class="logo" id="game-logo">
+            <h1>ORBIT ESCAPE</h1>
+            <p class="subtitle">Support & Help Center</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Support</h2>
+            <div class="contact-info">
+                <p>Need help with Orbit Escape? We're here to assist!</p>
+                <a href="mailto:info@orbit-escape.com" class="email">info@orbit-escape.com</a>
+                <p>We typically respond within 24-48 hours</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I unlock new planet packs?</div>
+                <div class="faq-answer">A: You can unlock planet packs in two ways: either by collecting 3,000 total captures through gameplay, or by purchasing them directly in the Store for $9.99 each.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do respawn tokens work?</div>
+                <div class="faq-answer">A: Respawn tokens let you continue from where you died instead of starting over. You can purchase them in the store, or you can watch an ad for a free respawn when you run out.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I get a refund for my purchase?</div>
+                <div class="faq-answer">A: Refunds are handled through the App Store. Go to Settings > [Your Name] > Media & Purchases > View Account > Purchase History, find your purchase, and select "Report a Problem" to request a refund from Apple.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I turn off ads?</div>
+                <div class="faq-answer">A: You can purchase the "Remove Ads" option in the Store for $4.99. This will eliminate all banner and pop-up ads, but you can still choose to watch rewarded ads for respawns.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: I lost my progress. Can you restore it?</div>
+                <div class="faq-answer">A: Progress is saved locally on your device. If you deleted the app or got a new device, unfortunately progress cannot be restored. However, any purchases you made can be restored using the "Restore Purchases" button in Settings.</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Jack Armstrong. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        // Handle missing logo gracefully
+        document.getElementById('game-logo').onerror = function() {
+            this.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
